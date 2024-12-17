@@ -13,7 +13,7 @@ class Database {
     }
     public function query($sql) {
        
-        $statement = $this->pdo->prepare("SELECT * FROM children"); 
+        $statement = $this->pdo->prepare($sql); 
         
         $statement->execute();
         
